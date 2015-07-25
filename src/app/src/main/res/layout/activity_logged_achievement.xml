@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.gester.use.gesterachievement.LoggedAchievementView">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="6">
+
+        <TextView
+            android:id="@+id/textViewLoggedAchievementTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Achievements"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:text="@string/sort_by_string"/>
+
+            <ImageButton
+                android:id="@+id/imageButtonLoggedAchievementDoneSortAlpha"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_plusone_medium_off_client"/>
+
+            <ImageButton
+                android:id="@+id/imageButtonLoggedAchievementDoneSortTime"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_plusone_medium_off_client"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listViewLoggedAchievementDone"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1">
+        </ListView>
+
+        <TextView
+            android:id="@+id/textViewLoggedAchievementMid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="All Achievements"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:text="@string/sort_by_string"/>
+
+            <ImageButton
+                android:id="@+id/imageButtonLoggedAchievementTodoSortAlpha"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_plusone_medium_off_client"/>
+
+            <ImageButton
+                android:id="@+id/imageButtonLoggedAchievementTodoSortDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_plusone_medium_off_client"/>
+
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/listViewLoggedAchievementTodo"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1">
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

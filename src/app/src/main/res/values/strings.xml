@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">GesterAchievement</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_main_activitiy">Home</string>
+    <string name="title_activity_activity_two">ActivityTwo</string>
+    <string name="title_activity_log_achievement">Log Achievement!</string>
+    <string name="hint_comment">Add Comment ...</string>
+    <string name="title_activity_logged_achievement">Achievements</string>
+    <string name="sort_by_string">Sort By:</string>
+    <string name="connector">http://192.168.178.22:8080/GesterAchievementServer/webapi/</string>
+    <!--<string name="connector">http://172.20.10.2:8080/GesterAchievementServer/webapi/</string> -->
+
+</resources>
